@@ -1,0 +1,116 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+  transition-duration: 1.5s;
+  overflow-x: hidden;
+}
+
+
+.element-hover{
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #AAAAAA;
+}
+::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+-webkit-appearance: none;
+}
+.button{
+  display: flex;
+  gap: 10px;
+  background-color: #0048FF;
+}
+.Suppor{
+  transition: .2s;
+}
+.Support:hover{
+  background-color: #0048ff3d;
+  border-radius: 50%;
+  color: black;
+}
+.MobileNone{
+  display: flex;
+}
+
+.MobileFullWidth{
+  width: auto;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+
+.divisor{
+  height: 1px;
+  width:85%;
+  background-color: #cecece26;
+}
+
+.hoveractive{
+  transition: .2s;
+}
+.DeskNone{
+  display: none !important
+}
+
+.ContentSupport{
+  position: absolute;
+  right: 30px;
+  bottom: 60px;
+}
+.ButtonSupport{
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+.HeadAjust{
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  padding-top:30px;
+  gap: 5px;
+  width: 100%
+}
+
+@media (max-width: 850px) {
+  .MobileNone{
+    display: none !important
+  }
+  .DetailMargin{
+    margin-top: 40px;
+  }
+  .DeskNone{
+    display: flex !important
+  }
+  .HeadAjust{
+    padding: 5%;
+    padding-bottom: 0;
+  }
+  .MobileFullWidth{
+    width: 100%;
+    margin: 10px;
+  }
+  .hoveractive{
+    color: #fff;
+    scale: 100.1%;
+    transition: .2s;
+    background-color: #ffffff2b;
+  }
+  .ButtonSupport{
+    left: 20px;
+  }
+  .ContentSupport{
+    left: 30px;
+  }
+  
+}
